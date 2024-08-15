@@ -1,0 +1,154 @@
+body{
+    margin: 0;
+    font-family: Arial;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.calculator{
+    border-radius: 10px;
+    height: 490px;
+    width: 350px;      
+    background-color: black;
+    color: white;
+    overflow: hidden;
+    
+}
+ 
+#display {
+    width: 330px;
+    height: 40px;
+    padding: 80px;
+    color: white;
+    font-weight: bolder;
+    padding: 10px;
+    margin-bottom: 1px;
+    font-size: 1.8rem;
+    border: none;
+    background-color: rgb(60, 60, 60);
+    text-align: right;
+}
+#keys{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 25px;
+    padding-top: 20px;
+}
+button{
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+    color: white;
+    background-color: rgb(110, 110, 110);
+    border: none;
+    cursor: pointer;
+    font-size: 1.3rem;
+    justify-content: space-evenly;
+}
+button:hover{
+    background-color: rgb(147, 146, 146);
+}
+button:active{
+    background-color: rgb(175, 174, 174);
+    color: black;
+}
+footer{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.historyss button{
+    width: 100px;
+    height: 50px;
+    font-size: 1.1rem;
+    border-radius: 10px;
+    text-align: center;
+
+}
+.orange{
+    background-color: rgba(249, 170, 25, 0.895);
+}
+.orange:hover{
+    background-color: rgb(252, 195, 89);
+}
+.orange:active{
+    background-color: rgba(255, 223, 165, 0.886);
+    color: black;
+}
+
+    /* Display History */
+#history-display{
+    width: auto;
+    height: auto;
+    min-height: 200px;
+    min-width: 300px;
+    background-color: #4e545c;
+    border-radius: 10px;
+    position:fixed;
+    right: 10px;
+    top:10px;
+    display: none;
+}
+.cross {
+    color: rgb(229, 227, 227);
+    background-color: #4e545c;
+    font-size: 23px;
+    margin: 10px;
+    height: auto;
+    width: auto;
+}
+
+#history-list{
+    border-radius: 10px;
+    font-size: 1.4rem;
+} 
+
+#history-tab{
+    margin: 5px;
+    min-height: 20px;
+    padding: 12px;
+    background-color: #8d9797;
+    border-radius: 10px;
+    font-size: 1.4rem;
+
+}
+#history-add{
+    font-size: 0.9rem;
+    height: 30px;
+    margin-left: 15px;
+    width: auto;
+    float :right;
+
+}
+.text-history {
+    color: aliceblue;
+    font-size: 1.3rem;
+    margin-left: 55px;
+    font-weight: 650;
+}
+
+.clearBtn {
+  background-color: aliceblue;
+  color: #4e545c;
+  font-size: 0.9rem;
+  text-align: left;
+  height: 25px;
+  width: 70px;
+  float: right;
+  margin-top: 17px;
+  margin-right: 10px;
+  font-weight: 600;
+  border-radius: 5px;
+}
+.clearBtn:hover{
+    background-color: rgb(200, 202, 204);
+    color: #4e545c;
+} 
+.clearBtn:active{
+    background-color: rgb(255, 255, 255);
+    color: black;
+}

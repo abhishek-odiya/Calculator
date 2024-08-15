@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Calculator</title>
+</head>
+
+<body>
+
+    <div class="calculator">
+        <input id="display" type="text" value="0"readonly>
+
+        <div id="keys">
+            <button class="orange" onclick="addnum('(')">(</button>
+            <button class="orange" onclick="addnum(')')">)</button>
+            <button class="orange" onclick="backspace()">DE</button>
+            <button class="orange" onclick="addnum('+')">+</button>
+            <button onclick="addnum('7')">7</button>
+            <button onclick="addnum('8')">8</button>
+            <button onclick="addnum('9')">9</button>
+            <button class="orange" onclick="addnum('-')">-</button>
+            <button onclick="addnum('4')">4</button>
+            <button onclick="addnum('5')">5</button>
+            <button onclick="addnum('6')">6</button>
+            <button class="orange" onclick="addnum('*')">*</button>
+            <button onclick="addnum('1')">1</button>
+            <button onclick="addnum('2')">2</button>
+            <button onclick="addnum('3')">3</button>
+            <button class="orange" onclick="addnum('/')">/</button>
+            <button class="orange" onclick="addnum('.')">.</button>
+            <button onclick="addnum('0')">0</button>
+            <button class="orange" onclick="allclear()">AC</button>
+            <button class="orange" onclick="calculate()">=</button>
+        </div>
+
+        <footer>
+            <div class="historyss">
+                <button id="history" onclick="displayHistory()">HISTORY</button>
+            </div>
+        </footer>
+
+    </div>
+
+    <div id="history-display">
+
+            <button onclick="hideHistory()" class="cross">&#10006</button>
+            <span class="text-history" style="text-align: center;">History</span>
+            <button onclick="clearHistory()" class="clearBtn">Clear All</button>
+            <div id="history-list"></div>
+    </div>
+
+</body>
+
+<script src="script.js"></script>
+
+</html>
