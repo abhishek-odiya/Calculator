@@ -1,4 +1,4 @@
-Calculator with History Tracking
+<h3>Calculator with History Tracking</h3>
 
 This web-based calculator offers more than just basic arithmetic—it's designed to enhance your calculation experience with advanced history tracking features. 
 Unlike standard calculators, this tool allows you to store the history of all your calculations, making it easy to revisit and reuse previous expressions. 
